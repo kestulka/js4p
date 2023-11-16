@@ -108,3 +108,43 @@
 //     teigNeig = "neigiamas";
 //     console.log(teigNeig);
 // }
+
+// function expression
+
+// const functionWithParamsName = function myFunction(param1, param2) {
+// function body
+// };
+
+// const functionName = function MyFunction2() {
+// function body
+// };
+
+// function declaration vs expression
+
+// function declaration:
+
+// function doStuff() {}
+
+// function expression:
+
+// const doStuff = function () {};
+
+// arrow functions
+
+// const FunctionWithParamsName = (param1, param2) => {
+// function body
+// };
+
+// const functionName = () => {
+// function body
+// };
+
+// callback functions
+
+// function oddEven(num, callback) {
+//   const result = num % 2 == 0 ? "lyginis" : "nelyginis";
+//   callback(num, result);
+// }
+// oddEven(13, (num, result) => {
+//   console.log("skaicius " + num + " yra " + result);
+// });
