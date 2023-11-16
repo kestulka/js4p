@@ -1,4 +1,3 @@
-"use strict";
 // import { masyvas } from "./toExportFrom.js";
 // console.log(masyvas);
 
