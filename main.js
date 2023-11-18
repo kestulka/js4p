@@ -131,20 +131,46 @@
 
 // arba
 
-function kelionesKaina(nuvaziuotiKilometrai, benzinoKaina) {
-  const kuroSanaudos = 7;
+// function kelionesKaina(nuvaziuotiKilometrai, benzinoKaina) {
+//   const kuroSanaudos = 7;
 
-  const sunaudotiLitrai = (nuvaziuotiKilometrai / 100) * kuroSanaudos;
+//   const sunaudotiLitrai = (nuvaziuotiKilometrai / 100) * kuroSanaudos;
 
-  const kelionesKaina = sunaudotiLitrai * benzinoKaina;
+//   const kelionesKaina = sunaudotiLitrai * benzinoKaina;
 
-  return kelionesKaina;
+//   return kelionesKaina;
+// }
+
+// const nuvaziuotiKilometrai = 200;
+
+// const benzinoKaina = 1.5;
+
+// const bendraKaina = kelionesKaina(nuvaziuotiKilometrai, benzinoKaina);
+
+// console.log(`Keliones kaina yra ${bendraKaina}€.`);
+
+// 7.
+
+// complex way
+
+function oddEven(num, callback) {
+  const result = num % 2 == 0 ? "lyginis" : "nelyginis";
+  callback(num, result);
 }
+oddEven(13, function (num, result) {
+  console.log("skaicius " + num + " yra " + result);
+});
 
-const nuvaziuotiKilometrai = 200;
+// simple way
 
-const benzinoKaina = 1.5;
-
-const bendraKaina = kelionesKaina(nuvaziuotiKilometrai, benzinoKaina);
-
-console.log(`Keliones kaina yra ${bendraKaina}€.`);
+function lyginisNelyginis(num) {
+  if (num % 2 == 0) {
+    console.log(`${num} metai yra lyginiai`);
+  } else {
+    console.log(`${num} metai yra nelyginiai`);
+  }
+}
+lyginisNelyginis(2007);
+lyginisNelyginis(1996);
+lyginisNelyginis(1895);
+lyginisNelyginis(2023);
